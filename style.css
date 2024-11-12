@@ -45,3 +45,8 @@ h1 {
 .link-item a:hover {
     text-decoration: underline;
 }
+
+form{
+    padding: 1rem !important;
+    border-radius: .25rem !important;
+  
