@@ -101,3 +101,8 @@ button {
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+input:focus {
+    border-color: #91bdfe; 
+    outline: 2px solid #c2dbfe; 
+    outline-offset: 2px; 
+}
