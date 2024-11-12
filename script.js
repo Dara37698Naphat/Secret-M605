@@ -6,7 +6,7 @@ async function loadContent() {
         
         const contentDiv = document.getElementById('content');
         data.links.forEach(link => {
-            const linkDiv = document.createElement('li');
+            const linkDiv = document.createElement('div');
             linkDiv.className = 'link-item';
             linkDiv.innerHTML = `<a href="${link.url}" target="_blank">${link.name}</a>`;
             contentDiv.appendChild(linkDiv);
