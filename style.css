@@ -1,19 +1,47 @@
-// โหลดข้อมูลจากไฟล์ JSON และแสดงบนหน้าเว็บ
-async function loadContent() {
-    try {
-        const response = await fetch('data.json');
-        const data = await response.json();
-        
-        const contentDiv = document.getElementById('content');
-        data.links.forEach(link => {
-            const linkDiv = document.createElement('div');
-            linkDiv.className = 'link-item';
-            linkDiv.innerHTML = `<a href="${link.url}" target="_blank">${link.name}</a>`;
-            contentDiv.appendChild(linkDiv);
-        });
-    } catch (error) {
-        console.error("Error loading JSON data:", error);
-    }
+#logoutButton {
+  top: 20px;
+  position: fixed;
+  right: 20px;
 }
 
-window.onload = loadContent;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.link-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.link-item:last-child {
+    border-bottom: none;
+}
+
+.link-item a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.link-item a:hover {
+    text-decoration: underline;
+}
