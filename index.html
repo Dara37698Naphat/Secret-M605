@@ -14,15 +14,15 @@
         <h1>ล็อกอินเข้าสู่ระบบ</h1>
         <form id="loginForm">
             <div>
-                <label for="username">Username (Student ID):</label>
-                <input type="text" id="username" required>
+                <label for="username">เลขประจำตัวนักเรียน</label>
+                <input type="text" id="username" placeholder="Username" required autofocus>
             </div>
             <div>
-                <label for="password">Password:</label>
-                <input type="password" id="password" required>
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" placeholder="Password" required>
             </div>
-            
-            <button type="submit">Login</button>
+            <p style="color:#F00;margin-top: 0;margin-bottom: 1rem;"></p>
+            <button type="submit" class="btn">Login</button>
         </form>
         <div id="loginMessage"></div>
     </div>
