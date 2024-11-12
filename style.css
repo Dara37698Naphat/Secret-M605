@@ -101,8 +101,11 @@ button {
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-input:focus {
+input:focus,button:focus {
     border-color: #91bdfe; 
     outline: none; 
     box-shadow: 0 0 5px 5px #c2dbfe;
+}
+button:hover{
+  background-color: #0a58ca;
 }
